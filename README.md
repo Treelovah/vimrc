@@ -4,15 +4,26 @@ My vimrc configuration
 ## Installation
 Copy this file into your `~/.vimrc` file.
 
-### Get Dependencies
+## Get Dependencies colorscheme angr
+Copy this file into `~/.vim/colors/` (default vim location)
+
+Path should look like this: `~/.vim/colors/angr.vim`
+
+Get `.vim` file here.
+
+*https://github.com/zacanger/angr.vim/blob/master/colors/angr.vim*
+
+
+
+# FINSHED
+
+## Extras
 `apt install vim-python-jedi`
 
 `vim-addons install python-jedi`
 
-Install colorscheme angr
-*https://github.com/rafi/awesome-vim-colorschemes*
+## Want more colors?
+`:h colors`
 
 ## Troubleshooting
-It's most likely the colorscheme, just change the color to one of the defaults that come with vim using internal `vim docs`
-
-`:h colors`
+Submit an issue :)
