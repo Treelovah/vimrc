@@ -7,7 +7,7 @@ Copy this file into your `~/.vimrc` file.
 ### Get Dependencies
 `apt install vim-python-jedi`
 
-`vim-addons install python-jedi-vim`
+`vim-addons install python-jedi`
 
 Install colorscheme angr
 *https://github.com/rafi/awesome-vim-colorschemes*
