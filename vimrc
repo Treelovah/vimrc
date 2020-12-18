@@ -42,3 +42,4 @@ set laststatus=2
 
 " Color scheme (terminal)
 colorscheme angr
+set t_Co=256
