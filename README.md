@@ -3,6 +3,7 @@ My vimrc configuration
 
 ## Script Install
 Run the simple bash script that automates below steps with minimal error checking.
+
 Just make sure you have internet?
 `bash INSTALL`
 
