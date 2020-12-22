@@ -1,0 +1,47 @@
+#/bin/bash
+
+# auto-install script
+DIR="$HOME/.vim/colors"
+# Check for vim
+echo "[+] Checking for vim install"
+echo "[-]"
+if [ -f $(which vim) ]
+then
+	echo "[+] found : $(which vim)"
+else
+	echo "[+] install vim"
+fi
+
+# Check for necessary Directories
+echo "[-]"
+echo "[+] Checking for necessary directories"
+echo "[-]"
+if [ -d "$DIR" ]
+then
+	echo "[+] $DIR found, moving on..."
+    echo "[-]"
+else
+	echo "[+] $DIR not found, creating directories"
+	echo "[-]"
+	$(mkdir -p $DIR)
+fi
+
+# Check for $USER .vimrc configuration
+if [ -f $HOME/.vimrc ]
+then
+    echo "[+] found : $HOME/.vimrc"
+    echo "[+] moving $HOME/.vimrc to $HOME/.vimrc.bak"
+    $(mv $HOME/.vimrc $HOME/.vimrc.bak)
+    echo "[-]"
+fi
+echo "[+] Installing https://raw.githubusercontent.com/Treelovah/vimrc/main/vimrc to $HOME/.vimrc"
+$(curl -o ~/.vimrc https://raw.githubusercontent.com/Treelovah/vimrc/main/vimrc 2>/dev/null)
+echo "[-]"
+echo "[+] Installing https://raw.githubusercontent.com/zacanger/angr.vim/master/colors/angr.vim"
+$(curl -o $DIR/angr.vim https://raw.githubusercontent.com/zacanger/angr.vim/master/colors/angr.vim 2>/dev/null)
+
+# Complete / OPTIONALS
+echo "[-]"
+echo "[+] DONE!"
+echo "[+] Installing autocomplete tools varies on system. do that manually"
+

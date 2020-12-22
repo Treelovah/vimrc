@@ -1,7 +1,12 @@
 # vimrc
 My vimrc configuration
 
-## Installation
+## Script Install
+
+Run the simple bash script that automates below steps with minimal error checking
+just make sure you have internet?
+`bash INSTALL`
+## Manual Installation
 Copy this file into your `~/.vimrc` file.
 
 ### Get Dependencies
