@@ -25,7 +25,7 @@ Get `.vim` file here.
 # FINSHED
 
 ## Extras
-`apt install vim-python-jedi`
+`apt install vim-python-jedi vim-addon-manager`
 
 `vim-addons install python-jedi`
 
