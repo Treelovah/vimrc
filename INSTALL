@@ -35,10 +35,10 @@ then
     echo "[-]"
 fi
 echo "[+] Installing https://raw.githubusercontent.com/Treelovah/vimrc/main/vimrc to $HOME/.vimrc"
-$(curl -o ~/.vimrc https://raw.githubusercontent.com/Treelovah/vimrc/main/vimrc 2>/dev/null)
+cp vimrc $HOME/.vimrc
 echo "[-]"
 echo "[+] Installing https://raw.githubusercontent.com/zacanger/angr.vim/master/colors/angr.vim"
-$(curl -o $DIR/angr.vim https://raw.githubusercontent.com/zacanger/angr.vim/master/colors/angr.vim 2>/dev/null)
+curl -o $DIR/angr.vim https://raw.githubusercontent.com/zacanger/angr.vim/master/colors/angr.vim 2>/dev/null
 
 # Complete / OPTIONALS
 echo "[-]"
